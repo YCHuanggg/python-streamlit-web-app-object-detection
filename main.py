@@ -12,13 +12,15 @@ set_background('./bg.png')
 
 
 # set title
-st.title('Brain MRI tumor detection')
+st.title('license plate detection')
 
 # set header
 st.header('Please upload an image')
+st.header('Please upload a video')
 
 # upload file
 file = st.file_uploader('', type=['png', 'jpg', 'jpeg'])
+file = st.file_uploader('', type=['mp4','wav','mov'])
 
 # load model
 cfg = get_cfg()
